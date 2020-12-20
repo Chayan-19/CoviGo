@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  /* overflow-x: hidden; */
+}
+
+.home,
+.plan-your-trip,
+.travel,
+.error,
+.safety-measures,
+.about-us {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.travel-btn {
+  background: #ff5050;
+  z-index: 9999;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 8px;
+  border: none;
+  position: relative;
+  bottom: -30px;
+  left: 1175px;
+  box-shadow: 0 16px 26px -10px rgba(194, 45, 45, 0.56),
+    0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 20px -5px rgba(194, 45, 45, 0.2);
+  flex-wrap: wrap;
+}
+
+.travel-btn.active.focus,
+.travel-btn.active:focus,
+.travel-btn.focus,
+.travel-btn.focus:active,
+.travel-btn:active:focus,
+.travel-btn:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  background-image: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.travel-btn:hover {
+  transition: box-shadow 0.3s ease-out;
+  transform: translateY(-2px);
+  box-shadow: none !important;
+}
+
+.fourOfour-img {
+  position: relative;
+  margin-left: 360px;
+  margin-top: -40px;
+  height: 500px;
+  max-width: 100%;
+  align-self: center;
+}
+
+.fourOfour-btn {
+  background: #ff5050;
+  z-index: 9999;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 8px;
+  border: none;
+  position: relative;
+  margin-top: 20px;
+  top: 30px;
+  right: 400px;
+  box-shadow: 0 16px 26px -10px rgba(194, 45, 45, 0.56),
+    0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 20px -5px rgba(194, 45, 45, 0.2);
+  flex-wrap: wrap;
+}
+
+.fourOfour-btn.active:focus,
+.fourOfour-btn.active:focus,
+.fourOfour-btn.focus,
+.fourOfour-btn.focus:active,
+.fourOfour-btn:active:focus,
+.fourOfour-btn:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  background-image: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.fourOfour-btn:hover {
+  transition: box-shadow 0.3s ease-out;
+  transform: translateY(-2px);
+  box-shadow: none !important;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #ff5050;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #ff5050;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  margin-bottom: 30px;
+}
+
+.home-one {
+  position: relative;
+  padding: 50px 50px 20px 900px;
+}
+
+.text-one {
+  color: #ff5050;
+  font-weight: 600;
+  padding: 50px 0 100px 90px;
+  font-size: 30px;
+  float: left;
+  width: 50%;
+  display: flex;
+  position: relative;
+  margin-top: -300px;
+}
+
+.home-two {
+  position: relative;
+  padding: 50px 50px 20px 60px;
+}
+
+.text-two {
+  color: #ff5050;
+  font-weight: 600;
+  padding: 50px 50px 100px 90px;
+  font-size: 30px;
+  float: right;
+  width: 50%;
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+}
+
+.text-three {
+  color: #ff5050;
+  font-weight: 600;
+  padding: 50px 50px 100px 90px;
+  font-size: 30px;
+  float: left;
+  width: 50%;
+  display: flex;
+  position: relative;
+  margin-top: -450px;
+}
+
+.home-three {
+  position: relative;
+  padding: 50px 50px 20px 800px;
+}
+
+.safety-one {
+  position: relative;
+  padding: 0 50px 20px 600px;
+}
+
+.safety-text-one {
+  color: #ff5050;
+  font-weight: 300;
+  padding: 50px 0 100px 90px;
+  font-size: 40px;
+  float: left;
+  width: 50%;
+  display: flex;
+  position: relative;
+  margin-top: -450px;
+}
